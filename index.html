@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <link href="./styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Гиперссылки и форма</title>
+  </head>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <body>
+      <div class = "row">
+          <header class="myHeader">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <div id="block">
+                            <div id="block-inner">
+                                <img id = "foto" src="https://steamuserimages-a.akamaihd.net/ugc/1816643444811945911/525C4AB069F2A3596BE90AA1D8290BA8D4480E9C/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" width="70" height="70" alt="">
+                                <h1 id = "aga">ГИПЕРССЫЛКИиФОРМА.ру</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="#spisok" title="Нумерованный список гиперссылок">
+							Ссылки
+						</a>
+					</li>
+                    <li>
+						<a href="#tablica" title="Таблица">
+							Таблица
+						</a>
+					</li>
+					<li>
+						<a href="#Forma" title="Форма">
+							Форма
+						</a>
+					</li>
+				</ul>
+			</nav>
+      <map name = "figuri" >
+			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
+			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
+		</map>
+      
+    
+    
+    <ol class="spisok" id ="spisok">
+      <li><a href="example.com">Aбсолютная гиперссылка</a></li>
+      <li><a href="https://example.com">Aбсолютная гиперссылка в протоколе</a></li>
+      <li><a href="ftp://example.com/file.txt">Cсылка на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://user:pass@example.com/file.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/FTP?#footer-info-copyright">Ссылка на фрагмент страницы некоторого сайта</a></li>
+      <li><a href="info.html#back">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="https://example.com/URL?a&b">Ссылка с двумя параметрами в URL</a></li>
+      <li><a href="#one" title="Первая ссылка">Первая с title </a><a href="#two" title="Вторая ссылка">Вторая с title </a> <a href="#three" title="Третья ссылка">Третья с title</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="">Ссылка с пустым href</a></li>
+      <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <!--noindex--><li><a href="https://example.com">Ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
+      <li><p>АОАОАОАОАОАОАОА<a href="https://example.com">Ссылка контекстная в тексте абзаца</a>ОАОАОАОАОАОАОА</p></li>
+      <li><a href="https://example.com"><img src="https://ligatver.ru/upload/iblock/b0c/b0c4c950d3e81417f4cec4daf3e38461.jpg" alt=""></a>
+      <br>Ссылка-изображение</li>
+      <li><img src="b0c4c950d3e81417f4cec4daf3e38461.jpg" usemap="#figuri" alt="">
+      <br>Ссылки из прямоугольных и круглых областей картинки</li>
+      <li><a href="info.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="./about/info.html"> Относительная на страницу в каталоге about</a></li>
+      <li><a href="./">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li><a href="../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li><a href="/">Сокращенная на главную</a></li>
+      <li><a href="/asd">Сокращенная ссылку на внутреннюю</a></li>
+    </ol>
+      
+    
+    <div id="tabiform">
+    <table id="tablica">
+      <tr>
+        <th>Вариант1</th>
+        <th>Вариант2</th>
+        <th>Вариант3</th>
+      </tr>
+      <tr>
+          <td colspan="3">Ответы на задания 1-4</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>d</td>
+        <td>c</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td>c</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>148</td>
+        <td>-4</td>
+      </tr>
+      <tr>
+        <td>abdc</td>
+        <td>cadb</td>
+        <td>bacd</td>
+      </tr>
+    </table>
+      
+
+    <form id ="form" action="/"
+      method="POST">
+    <h2 id = "Forma">Форма HTML</h2>
+
+      <label>
+        Введите имя:<br />
+        <input name="field-name-1" />
+      </label><br />
+
+      <label>
+        Введите ваш email:<br />
+        <input name="field-email"
+          type="email" />
+      </label><br />
+
+      <label>
+        Введите вашу дату рождения:<br />
+        <input name="field-date"
+          type="date" />
+      </label><br />
+        
+        Пол:<br />
+      <label><input type="radio"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+        
+        Количество конечностей:<br />
+      <label><input type="radio" 
+        name="radio-group-2" value="Значение1" />
+        0</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение3" />
+        2</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение4" />
+        3</label>
+       <label><input type="radio"
+        name="radio-group-2" value="Значение5" />
+        4</label><br />
+        
+        <label>
+        Сверхспособности:<br />
+        <select name="field-name-2">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </label><br />
+
+
+
+      <label>
+        Ваша биография:<br />
+        <textarea name="field-name-3"></textarea>
+      </label><br />
+
+
+      <br />
+      <label> 
+          С контрактом ознакомлен(a)
+        <input type="checkbox" 
+        name="check-1" />
+          </label><br /> 
+
+     
+      <input type="submit" value="Отправить" />
+    </form>
+      </div>
+    <footer class="myFooter">(с) Шумаев Максим 2022</footer>
+    </div>
+  </body>
+    
+</html> 
